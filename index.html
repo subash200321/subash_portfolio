@@ -23,17 +23,17 @@
     --muted:    #6b7f9a;
     --muted2:   #8fa3bc;
   }
-
+ 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
-
+ 
   body {
     background: var(--bg);
     color: var(--text);
     font-family: 'IBM Plex Sans', sans-serif;
     overflow-x: hidden;
   }
-
+ 
   /* ── NOISE ── */
   body::before {
     content: '';
@@ -41,7 +41,7 @@
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
     pointer-events: none; z-index: 1000; opacity: 0.45;
   }
-
+ 
   /* ── NAV ── */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 500;
@@ -64,7 +64,7 @@
     color: var(--muted); text-decoration: none; transition: color .2s;
   }
   .nav-links a:hover { color: var(--blue); }
-
+ 
   /* ── HERO ── */
   .hero {
     min-height: 100vh;
@@ -109,7 +109,7 @@
     animation: blink 2s infinite;
   }
   @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.25} }
-
+ 
   .hero h1 {
     font-family: 'Playfair Display', serif; font-weight: 900;
     font-size: clamp(3.2rem, 5.5vw, 5.5rem);
@@ -163,7 +163,7 @@
     transition: border-color .2s, color .2s;
   }
   .btn-outline:hover { border-color: var(--blue); color: var(--blue); }
-
+ 
   /* ── HERO RIGHT ── */
   .hero-right {
     display: flex; justify-content: center; align-items: center;
@@ -193,7 +193,7 @@
     border: 2px dashed rgba(255,255,255,0.08);
   }
   .photo-placeholder span { font-family:'IBM Plex Mono',monospace; font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; opacity:.4; }
-
+ 
   /* ── STATS BAR ── */
   .stats-bar {
     display:grid; grid-template-columns:repeat(2,1fr);
@@ -212,7 +212,7 @@
     font-size:2.3rem; color:var(--blue); display:block;
   }
   .stat-label { font-family:'IBM Plex Mono',monospace; font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-top:.3rem; display:block; }
-
+ 
   /* ── SECTIONS ── */
   section { padding:6rem 4rem; }
   .section-label {
@@ -233,7 +233,7 @@
   }
   .section-title em { font-style:italic; color:var(--blue); font-weight:400; }
   .section-desc { color:var(--muted2); font-size:.85rem; line-height:1.85; max-width:520px; font-weight:300; }
-
+ 
   /* ── PROJECTS ── */
   #projects { background:var(--bg2); }
   .projects-header { display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:3.5rem; flex-wrap:wrap; gap:1rem; }
@@ -293,7 +293,7 @@
   .kpi-label { font-family:'IBM Plex Mono',monospace; font-size:.52rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
   .pnl-pos { color:var(--green); }
   .pnl-neg { color:var(--red); }
-
+ 
   /* ── SKILLS ── */
   #skills { background:var(--bg); }
   .skills-layout { display:grid; grid-template-columns:1fr 1.5fr; gap:5rem; align-items:start; margin-top:3.5rem; }
@@ -320,7 +320,7 @@
   .tool-item:hover { background:var(--bg3); }
   .tool-icon { font-size:1.5rem; display:block; margin-bottom:.5rem; }
   .tool-name { font-family:'IBM Plex Mono',monospace; font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); }
-
+ 
   /* ── ABOUT ── */
   #about { background:var(--bg2); }
   .about-layout { display:grid; grid-template-columns:1.2fr 1fr; gap:5rem; align-items:start; margin-top:3.5rem; }
@@ -348,7 +348,7 @@
   .edu-degree { font-size:.8rem; color:var(--text); margin-bottom:.25rem; font-weight:500; }
   .edu-school { font-size:.72rem; color:var(--blue); }
   .edu-year { font-family:'IBM Plex Mono',monospace; font-size:.62rem; color:var(--muted); margin-top:.15rem; }
-
+ 
   /* ── CERTIFICATIONS ── */
   #certifications { background:var(--bg); }
   .certs-grid {
@@ -371,7 +371,7 @@
     color:var(--blue); margin-bottom:.6rem; display:block;
   }
   .cert-name { font-size:.82rem; color:var(--text); font-weight:500; line-height:1.5; }
-
+ 
   /* ── ACHIEVEMENTS ── */
   #achievements { background:var(--bg2); }
   .ach-grid { display:flex; flex-direction:column; gap:1px; background:var(--border); border:1px solid var(--border); margin-top:3rem; }
@@ -387,7 +387,7 @@
   }
   .ach-content h4 { font-size:.88rem; color:var(--cream); font-weight:500; margin-bottom:.5rem; }
   .ach-content p { font-size:.78rem; color:var(--muted2); line-height:1.75; font-weight:300; }
-
+ 
   /* ── EDUCATION ── */
   #education { background:var(--bg); }
   .edu-timeline { display:flex; flex-direction:column; gap:0; margin-top:3rem; position:relative; }
@@ -429,7 +429,7 @@
     font-size:.58rem; letter-spacing:.1em; text-transform:uppercase;
     color:var(--blue); border-radius:2px;
   }
-
+ 
   /* ── EXPERIENCE ── */
   #experience { background:var(--bg2); }
   .exp-card {
@@ -472,7 +472,7 @@
     .exp-responsibilities { grid-template-columns:1fr; }
     .edu-tl-item { grid-template-columns:1fr; gap:.75rem; }
   }
-
+ 
   /* ── CONTACT ── */
   #contact { background:var(--bg); text-align:center; }
   .contact-inner { max-width:600px; margin:0 auto; }
@@ -499,7 +499,7 @@
     border-radius:2px; transition:border-color .2s, color .2s;
   }
   .social-link:hover { border-color:var(--blue); color:var(--blue); }
-
+ 
   /* ── FOOTER ── */
   footer {
     padding:2rem 4rem; border-top:1px solid var(--border);
@@ -507,17 +507,17 @@
     font-family:'IBM Plex Mono',monospace;
     font-size:.62rem; letter-spacing:.08em; color:var(--muted);
   }
-
+ 
   /* ── ANIMATIONS ── */
   @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
   .reveal { opacity:0; transform:translateY(30px); transition:opacity .7s ease, transform .7s ease; }
   .reveal.visible { opacity:1; transform:translateY(0); }
-
+ 
   /* ── SCROLLBAR ── */
   ::-webkit-scrollbar { width:4px; }
   ::-webkit-scrollbar-track { background:var(--bg); }
   ::-webkit-scrollbar-thumb { background:var(--blue); border-radius:2px; }
-
+ 
   /* ── RESPONSIVE ── */
   @media (max-width:900px) {
     nav { padding:1rem 1.5rem; }
@@ -538,7 +538,7 @@
 </style>
 </head>
 <body>
-
+ 
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">Subash<span> M.</span></a>
@@ -554,7 +554,7 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
-
+ 
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-bg-grid"></div>
@@ -585,11 +585,11 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- STATS BAR -->
 <div class="stats-bar">
   <div class="stat-item reveal">
-    <span class="stat-num">4</span>
+    <span class="stat-num">5</span>
     <span class="stat-label">Projects Completed</span>
   </div>
   <div class="stat-item reveal">
@@ -597,7 +597,7 @@
     <span class="stat-label">Certifications</span>
   </div>
 </div>
-
+ 
 <!-- ABOUT -->
 <section id="about">
   <div class="section-label">About</div>
@@ -636,13 +636,13 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- EDUCATION -->
 <section id="education">
   <div class="section-label">Academic</div>
   <h2 class="section-title">Edu<em>cation</em></h2>
   <div class="edu-timeline">
-
+ 
     <div class="edu-tl-item reveal">
       <div class="edu-tl-year">2025 – 2027<br>Ongoing</div>
       <div class="edu-tl-body">
@@ -652,7 +652,7 @@
         <span class="edu-badge">Postgraduate</span>
       </div>
     </div>
-
+ 
     <div class="edu-tl-item reveal">
       <div class="edu-tl-year">2021 – 2025<br>Completed</div>
       <div class="edu-tl-body">
@@ -662,10 +662,10 @@
         <span class="edu-badge">Undergraduate</span>
       </div>
     </div>
-
+ 
   </div>
 </section>
-
+ 
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="section-label">Career</div>
@@ -689,7 +689,7 @@
     </ul>
   </div>
 </section>
-
+ 
 <!-- PROJECTS -->
 <section id="projects">
   <div class="projects-header">
@@ -697,11 +697,11 @@
       <div class="section-label">Work</div>
       <h2 class="section-title">Featured <em>Projects</em></h2>
     </div>
-    <p class="section-desc">Four end-to-end analytics projects spanning SQL, Python, Power BI, and Excel — all centred on Indian stock market analysis.</p>
+    <p class="section-desc">Five end-to-end analytics projects spanning SQL, Python, Power BI, and Excel — all centred on Indian stock market analysis.</p>
   </div>
-
+ 
   <div class="projects-grid">
-
+ 
     <!-- SQL -->
     <div class="project-card reveal">
       <span class="project-num">01 — SQL</span>
@@ -730,7 +730,7 @@
         <span class="pnl-pos">▲ Comprehensive</span>
       </div>
     </div>
-
+ 
     <!-- Python -->
     <div class="project-card reveal">
       <span class="project-num">02 — Python</span>
@@ -754,7 +754,7 @@
         <span class="pnl-pos">▲ Jupyter Notebook</span>
       </div>
     </div>
-
+ 
     <!-- Excel -->
     <div class="project-card reveal">
       <span class="project-num">03 — Excel</span>
@@ -778,7 +778,7 @@
         <span class="pnl-pos">▲ 6 Sheets</span>
       </div>
     </div>
-
+ 
     <!-- Power BI -->
     <div class="project-card reveal">
       <span class="project-num">04 — Power BI</span>
@@ -802,11 +802,39 @@
         <span class="pnl-pos">▲ Interactive</span>
       </div>
     </div>
-
+ 
+    <!-- Portfolio Optimization -->
+    <div class="project-card reveal" style="grid-column:1/-1;">
+      <span class="project-num">05 — Python · Machine Learning</span>
+      <div class="project-icon" style="background:rgba(168,85,247,0.1);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+      </div>
+      <h3 class="project-title">Indian Stock Portfolio Optimization — Monte Carlo & ML</h3>
+      <p class="project-desc">Advanced Python project applying Modern Portfolio Theory to 6 Indian NSE stocks (2020–2026) — using 10,000 Monte Carlo simulations to map the Efficient Frontier, identify the Max Sharpe and Min Volatility portfolios, and predict future returns using Linear Regression.</p>
+      <div class="kpi-strip">
+        <div class="kpi-item"><span class="kpi-val">6</span><span class="kpi-label">NSE Stocks</span></div>
+        <div class="kpi-item"><span class="kpi-val">10K</span><span class="kpi-label">Simulations</span></div>
+        <div class="kpi-item"><span class="kpi-val">2020–26</span><span class="kpi-label">Yearly Data</span></div>
+      </div>
+      <ul class="project-highlights">
+        <li>Loaded and cleaned 6 years of yearly NSE price data (Reliance, TCS, HDFC Bank, Infosys, HUL, Tata Motors) using Pandas and openpyxl</li>
+        <li>Visualised year-end prices, normalised performance (base = 100), and year-wise return heatmap using Matplotlib and Seaborn</li>
+        <li>Built a correlation matrix to identify diversification opportunities across sectors</li>
+        <li>Ran 10,000 Monte Carlo simulations to generate random portfolio weights and plot the Efficient Frontier (Risk vs Return)</li>
+        <li>Used SciPy optimisation (SLSQP) to find the Max Sharpe Ratio portfolio and Min Volatility portfolio with optimal weight allocations</li>
+        <li>Engineered yearly features (1Y/2Y returns, rolling volatility, MA ratio) and trained a Linear Regression model to predict next-year returns per stock</li>
+      </ul>
+      <div class="project-tags">
+        <span class="tag">Python</span><span class="tag">NumPy</span><span class="tag">Pandas</span><span class="tag">SciPy</span><span class="tag">Scikit-Learn</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">Monte Carlo</span><span class="tag">Efficient Frontier</span><span class="tag">Linear Regression</span>
+      </div>
+      <div class="project-meta">
+        <span>portfolio_optimization_indian_yearly.ipynb</span>
+        <span style="color:#a855f7;">◆ Advanced</span>
+      </div>
+    </div>
+ 
   </div>
 </section>
-
-<!-- SKILLS -->
 <section id="skills">
   <div class="section-label">Expertise</div>
   <h2 class="section-title">Tools &amp; <em>Skills</em></h2>
@@ -865,12 +893,13 @@
         <div class="tool-item"><span class="tool-icon">📈</span><span class="tool-name">yFinance</span></div>
         <div class="tool-item"><span class="tool-icon">🔢</span><span class="tool-name">NumPy / Pandas</span></div>
         <div class="tool-item"><span class="tool-icon">📉</span><span class="tool-name">Matplotlib</span></div>
+        <div class="tool-item"><span class="tool-icon">🔬</span><span class="tool-name">SciPy / Sklearn</span></div>
         <div class="tool-item"><span class="tool-icon">🏦</span><span class="tool-name">Tally ERP</span></div>
       </div>
     </div>
   </div>
 </section>
-
+ 
 <!-- CERTIFICATIONS -->
 <section id="certifications">
   <div class="section-label">Credentials</div>
@@ -903,7 +932,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ACHIEVEMENTS -->
 <section id="achievements">
   <div class="section-label">Milestones</div>
@@ -932,7 +961,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- CONTACT -->
 <section id="contact">
   <div class="contact-inner">
@@ -953,19 +982,19 @@
     </div>
   </div>
 </section>
-
+ 
 <footer>
   <span>© 2026 — Subash M</span>
   <span>Finance & Data Portfolio</span>
 </footer>
-
+ 
 <script>
 // Scroll reveal
 const obs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
 },{threshold:0.1});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-
+ 
 // Skill bars
 const skillObs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{
@@ -976,7 +1005,7 @@ const skillObs=new IntersectionObserver(entries=>{
   });
 },{threshold:0.3});
 document.querySelectorAll('.skills-categories').forEach(el=>skillObs.observe(el));
-
+ 
 // Counter animation
 function animCounter(el,target,prefix='',suffix=''){
   let start=0;const dur=1500;
