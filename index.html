@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="color-scheme" content="dark">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Subash M — MBA Financial Services | Finance & Accounting</title>
 <meta name="description" content="Subash M — MBA (Financial Services) student with internships at Grindwell Norton (Saint-Gobain) and Unitech Plasto Components. Accounting, GST, payroll, credit note analysis, SQL, Python, Power BI.">
@@ -10,8 +11,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#eaf1fb; --paper:#ffffff; --ink:#0b2447; --muted:#4a5f80;
-  --rule:#d3e0f3; --blue:#1558c0; --blue-dark:#0d3f8f; --blue-soft:#e3edfc;
+  --bg:#050b18; --paper:#0b1730; --ink:#e6eefb; --muted:#9db2d3;
+  --rule:#1d3358; --blue:#5aa4ff; --blue-dark:#0c2f6b; --blue-soft:#13284b;
+  --chip:#bcd8ff; --side:#08122a;
   --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
   --sans:'DM Sans',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
 }
@@ -19,10 +21,10 @@
 body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.6;font-size:15.5px}
 a{color:var(--blue)}
 :focus-visible{outline:2px solid var(--blue);outline-offset:3px}
-.page{max-width:1000px;margin:28px auto;background:var(--paper);border-radius:10px;overflow:hidden;box-shadow:0 2px 18px rgba(11,36,71,.12)}
+.page{max-width:1000px;margin:28px auto;background:var(--paper);border-radius:10px;overflow:hidden;box-shadow:0 4px 28px rgba(0,0,0,.55);border:1px solid var(--rule)}
 
 /* header */
-.top{background:var(--blue-dark);color:#fff;padding:30px 36px;display:flex;gap:28px;align-items:center}
+.top{background:linear-gradient(135deg,#0c2f6b,#08204a);color:#fff;padding:30px 36px;display:flex;gap:28px;align-items:center}
 .photo{position:relative;flex:none;width:136px;height:136px;border-radius:10px;border:3px solid #fff;background:var(--blue);overflow:hidden;display:grid;place-items:center}
 .photo::before{content:"SM";font-family:var(--serif);font-weight:700;font-size:2.4rem;color:#fff}
 .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 25%}
@@ -45,8 +47,8 @@ a{color:var(--blue)}
 /* body */
 .body{display:grid;grid-template-columns:1.75fr 1fr}
 .main{padding:8px 36px 32px;border-right:1px solid var(--rule)}
-.side{padding:8px 28px 32px;background:#f7faff}
-h2{font-family:var(--serif);font-size:1.3rem;color:var(--blue-dark);border-bottom:2px solid var(--blue);padding-bottom:4px;margin:26px 0 14px}
+.side{padding:8px 28px 32px;background:var(--side)}
+h2{font-family:var(--serif);font-size:1.3rem;color:var(--blue);border-bottom:2px solid var(--blue);padding-bottom:4px;margin:26px 0 14px}
 .job{margin-bottom:20px}
 .job header{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
 .job h3{font-size:1.05rem;font-weight:700}
@@ -61,7 +63,7 @@ li{margin-bottom:6px}
 .note{font-size:.88rem;color:var(--muted);margin:-6px 0 12px}
 .side h2{font-size:1.1rem;margin-top:26px}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
-.chips span{background:var(--blue-soft);color:var(--blue-dark);padding:2px 10px;border-radius:5px;font-size:.86rem;font-weight:500}
+.chips span{background:var(--blue-soft);color:var(--chip);padding:2px 10px;border-radius:5px;font-size:.86rem;font-weight:500}
 .side h4{font-size:.9rem;margin:12px 0 6px}
 .side ul{list-style:none;padding:0}
 .side li{padding-left:14px;position:relative;margin-bottom:7px;font-size:.93rem}
@@ -80,6 +82,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 0 28px}
   .page{margin:0;border-radius:0}
 }
 @media print{
+  :root{--bg:#fff;--paper:#fff;--ink:#0b2447;--muted:#4a5f80;--rule:#d3e0f3;--blue:#1558c0;--blue-soft:#e3edfc;--chip:#0d3f8f;--side:#f7faff}
   body{background:#fff;font-size:12px}
   .page{margin:0;box-shadow:none;border-radius:0}
   .btns,footer{display:none}
